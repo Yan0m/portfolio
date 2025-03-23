@@ -1,0 +1,42 @@
+
+
+.butify-title {
+    color: orange;
+}
+
+#butify-context {
+    width: 40%;
+    text-align: left;
+}
+
+#butify-row1 {
+    align-items: flex-start;
+}
+
+#butify-programmation {
+    margin: 0 auto;
+    width: 35%;
+    height: 250px;
+}
+
+.butify-btn {
+    background-color: orange;
+    color: #fff;
+}
+
+#butify-document {
+    margin: 0 auto;
+    width: 35%;
+}
+
+#butify-conclusion {
+    margin-top: 10px;
+    text-align: start;
+}
+
+.Butify-logo-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+

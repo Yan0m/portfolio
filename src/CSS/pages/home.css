@@ -1,0 +1,110 @@
+  .main-container {
+    padding: 5%;
+    background-color: #ffffff;
+    width: 80%;
+    margin-top: 5%;
+    margin: 5% auto;
+  }
+  
+  img {
+    user-select: none;
+
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    /* background-color: #226e36; */
+    /* color: white; */
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .back-btn {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: rgb(78, 138, 236);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    /* background-color: #339e4f; */
+  }
+  
+  .presentation-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile span {
+    margin-top: 5px;
+  }
+
+  #profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: center;
+  }
+
+  .references-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .references-card {
+    margin: auto;
+    width: 45%;
+    cursor: pointer;
+  }
+
+  .references-logo {
+    height: 200px;
+  }
+
+  @media (max-width: 768px) {
+    .presentation-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #profile img {
+      width: 120px;
+    }
+  }

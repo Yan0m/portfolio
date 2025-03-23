@@ -1,0 +1,62 @@
+.skills-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .skills-section::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    padding-top: 10px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .skill-card {
+    width: 300px;
+  }
+
+  .scroll-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; 
+  }
+  
+  .scroll-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 21px;
+    z-index: 3;
+    border-radius: 50%;
+    top: 5%;
+    right: 10px;
+    gap: 50px;
+  }
+  
+  .scroll-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
