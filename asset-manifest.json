@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.54a938e0.css",
+    "main.js": "/portfolio/static/js/main.4fc81bf8.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/Rapport_Butify.pdf": "/portfolio/static/media/Rapport_Butify.c24fb9728f11e6c807b5.pdf",
+    "static/media/JAVA.png": "/portfolio/static/media/JAVA.035a401e41a6cfbd19bb.png",
+    "static/media/profile.png": "/portfolio/static/media/profile.12886e0bfc8ccd229048.png",
+    "static/media/C++.png": "/portfolio/static/media/C++.904c659a2c4e76605892.png",
+    "static/media/CSHARP.png": "/portfolio/static/media/CSHARP.766c48210078f0dd2fa1.png",
+    "static/media/REACT.png": "/portfolio/static/media/REACT.38c43181c7b99ba6a293.png",
+    "static/media/Butify_Cahier_des_charges.pdf": "/portfolio/static/media/Butify_Cahier_des_charges.6e34e0780f5a9e4d8c5c.pdf",
+    "static/media/FLUTTER.png": "/portfolio/static/media/FLUTTER.89a8e4516fb3858db221.png",
+    "static/media/final.png": "/portfolio/static/media/final.a157b0d548c3d6f9cfa6.png",
+    "static/media/CSS.png": "/portfolio/static/media/CSS.58048dae9a78eb388475.png",
+    "static/media/C.png": "/portfolio/static/media/C.bbbbbabc8c191bfb99bf.png",
+    "static/media/carton.png": "/portfolio/static/media/carton.3ad717fcec5aa0b85538.png",
+    "static/media/BASH.png": "/portfolio/static/media/BASH.4c6535267b5c0b4b0319.png",
+    "index.html": "/portfolio/index.html",
+    "main.54a938e0.css.map": "/portfolio/static/css/main.54a938e0.css.map",
+    "main.4fc81bf8.js.map": "/portfolio/static/js/main.4fc81bf8.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54a938e0.css",
+    "static/js/main.4fc81bf8.js"
+  ]
+}
