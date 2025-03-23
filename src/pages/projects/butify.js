@@ -1,5 +1,6 @@
 import "../../CSS/pages/projects/butify.css";
 
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,11 +11,12 @@ import butifyCdc from "../../assets/projects/Butify/Butify_Cahier_des_charges.pd
 import butifyRapport from "../../assets/projects/Butify/Rapport_Butify.pdf";
 
 function Butify() {
+    const navigate = useNavigate();
 
     return(
         <div className="main-container">
-            <a href="/" className="back-btn">
-            <FontAwesomeIcon icon={faArrowLeft} size="sm" /> retour
+            <a className="back-btn" onClick={() => navigate("/portfolio")}>
+                <FontAwesomeIcon icon={faArrowLeft} size="sm" /> retour
             </a>
             <h1 id="butify-title" className="butify-title">Butify</h1>
             <div>

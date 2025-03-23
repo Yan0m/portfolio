@@ -13,7 +13,7 @@ function App() {
       <div className="container">
         <nav className="navbar">
           <div className="nav-brand">
-            <Link to="/">Mon Portfolio</Link>
+            <Link to="/portfolio">Mon Portfolio</Link>
           </div>
           <div className="nav-links">
             <ScrollLink to="skills" smooth={true} duration={500}>Compétences</ScrollLink>
@@ -23,7 +23,7 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/butify" element={<Butify/>}/>
           <Route path="/projects/famstock" element={<Famstock/>}/>
