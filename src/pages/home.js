@@ -16,11 +16,11 @@ function Home() {
   return (
     <div className="main-container">
       { /* #region Presentation */}
-      <section id="presentation">
+      <section id="portfolio">
       <div className="presentation-section">
         <div id="profile">
             <img src={profilePic} alt="Profile" draggable="false"></img>
-            <span>YOU Théo</span>
+            <span id="Name">YOU Théo</span>
         </div>
         <div>
           <h1>Bienvenue sur mon Portfolio </h1>
@@ -47,24 +47,26 @@ function Home() {
 
       {/* #region Réferences */}
       <section id="projects">
-      <h1>Mes Projets</h1>
-      <div className="references-section">
-        <div className="card references-card" onClick={() => navigate("../projects/butify")}>
-          <h2>Butify</h2>
-            <div className="row">
-              <img src={butifyLogo} alt="Butify Logo" className="references-logo"></img>
-            </div>
-        </div>
+        <h1>Mes Projets</h1>
+        <div className="references-section">
+          <div className="card references-card" onClick={() => navigate("../projects/butify")}>
+            <h2>Butify</h2>
+              <div className="row">
+                <img src={butifyLogo} alt="Butify Logo" className="references-logo"></img>
+              </div>
+          </div>
 
-        <div className="card references-card" onClick={() => navigate("../projects/famstock")}>
-          <h2>Fam'stock</h2>
-            <div className="row">
-              <img src={famstockLogo} alt="FamStock Logo" className="references-logo"></img>
-            </div>
+          <div className="card references-card" onClick={() => navigate("../projects/famstock")}>
+            <h2>Fam'stock</h2>
+              <div className="row">
+                <img src={famstockLogo} alt="FamStock Logo" className="references-logo"></img>
+              </div>
+          </div>
         </div>
-      </div>
+        <div className="center">
+          <a id="show-more" href="/projects" className="btn">En voir plus</a>
+        </div>
       </section>
-      {/* <a href="/projects" className="btn">En voir plus</a> */}
     </div>
   );
 }

@@ -1,7 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
 import Home from "./pages/home";
+import Contact from "./pages/contact";
 import Projects from "./pages/projects";
 import Butify from "./pages/projects/butify";
 import Famstock from "./pages/projects/famstock";
@@ -11,19 +13,11 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <nav className="navbar">
-          <div className="nav-brand">
-            <Link to="/portfolio">Mon Portfolio</Link>
-          </div>
-          <div className="nav-links">
-            <ScrollLink to="skills" smooth={true} duration={500}>Compétences</ScrollLink>
-            <ScrollLink to="projects" smooth={true} duration={500}>Projets</ScrollLink>
-            <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
-          </div>
-        </nav>
+        <Navbar/>
 
         <Routes>
           <Route path="/portfolio" element={<Home />} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/butify" element={<Butify/>}/>
           <Route path="/projects/famstock" element={<Famstock/>}/>

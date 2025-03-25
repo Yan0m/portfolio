@@ -5,6 +5,11 @@
     margin-top: 5%;
     margin: 5% auto;
   }
+
+  #Name {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
   
   img {
     user-select: none;
@@ -95,7 +100,16 @@
   }
 
   .references-logo {
-    height: 200px;
+    min-width: 125px;
+    max-height: 200px;
+  }
+
+  #show-more {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    width: fit-content;
   }
 
   @media (max-width: 768px) {

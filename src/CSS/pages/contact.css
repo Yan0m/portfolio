@@ -1,0 +1,97 @@
+#form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 20px 0 #000000;
+    max-width: 400px;
+    text-align: center;
+}
+
+#form-display {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ .contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+} 
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#prevent-message {
+    font-style: italic;
+    margin-top: 10px;
+    max-width: 400px;
+    color: gray;
+}
+
+.row-social-network {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre les cartes */
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 400px; /* Ajuste à la largeur du formulaire */
+    margin: 0 auto; /* Centre horizontalement */
+    overflow: hidden; /* Empêche le dépassement */
+}
+
+.card-social-network {
+    flex: 1; /* Permet aux cartes de s’adapter à l’espace disponible */
+    max-width: 100px; /* Définit une taille max */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border-radius: 8px;
+    margin: 5px; /* Ajoute un petit espace */
+    min-width: 60px; /* Évite qu’elles deviennent trop petites */
+}
+
+.card-social-network a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem; /* Réduit la taille pour s’adapter */
+    font-weight: bold;
+}

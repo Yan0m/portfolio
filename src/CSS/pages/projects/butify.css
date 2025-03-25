@@ -16,7 +16,7 @@
 #butify-programmation {
     margin: 0 auto;
     width: 35%;
-    height: 250px;
+    height: fit-content;
 }
 
 .butify-btn {
