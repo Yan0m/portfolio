@@ -65,33 +65,44 @@ button:hover {
     max-width: 400px;
     color: gray;
 }
-
 .row-social-network {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Centre les cartes */
-    width: 100%; /* Prend toute la largeur disponible */
-    max-width: 400px; /* Ajuste à la largeur du formulaire */
-    margin: 0 auto; /* Centre horizontalement */
-    overflow: hidden; /* Empêche le dépassement */
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
 }
 
+/* Style des cartes de réseaux sociaux */
 .card-social-network {
-    flex: 1; /* Permet aux cartes de s’adapter à l’espace disponible */
-    max-width: 100px; /* Définit une taille max */
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f0f0f0;
-    border-radius: 8px;
-    margin: 5px; /* Ajoute un petit espace */
-    min-width: 60px; /* Évite qu’elles deviennent trop petites */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card-social-network:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-social-network a {
     text-decoration: none;
-    color: #000;
-    font-size: 1.2rem; /* Réduit la taille pour s’adapter */
+    font-size: 18px;
+    color: #333;
     font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.card-social-network a:hover {
+    color: #007bff;
+}
+
+.card-social-network a:active {
+    color: #0056b3;
 }

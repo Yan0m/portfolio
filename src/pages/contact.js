@@ -1,17 +1,25 @@
+import { toast } from "react-toastify";
+
 import "../CSS/pages/contact.css"
 
 function Contact() {
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+        toast.info("🚧 Fonctionnalité non disponible pour le moment !");
+    };
+
     return(
         <div className="main-container">
             <div className="contact-container col">
                 <div className="center col">
                     <h1>Contactez-moi</h1>
                     <div id="form-container">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div id="form-display">
                                 <div class="contact-row">
                                     <div class="input-group">
-                                        <label for="lastName">Nom :</label>
+                                        <label htmlFor="lastName">Nom :</label>
                                         <input type="text" id="lastName"/>
                                     </div>
                                     <div class="input-group">
@@ -33,7 +41,7 @@ function Contact() {
                                         <textarea id="description"></textarea>
                                     </div>
                                 </div>
-                                <button type="none">Envoyer</button>
+                                <button type="submit">Envoyer</button>
                             </div>
                         </form>
                     </div>

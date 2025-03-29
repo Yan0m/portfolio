@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/home";
@@ -22,6 +23,8 @@ function App() {
           <Route path="/projects/butify" element={<Butify/>}/>
           <Route path="/projects/famstock" element={<Famstock/>}/>
         </Routes>
+
+        <ToastContainer position="bottom-center" autoClose={3000} />
       </div>
     </Router>
   );

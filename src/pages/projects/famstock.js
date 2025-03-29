@@ -10,7 +10,7 @@ function Famstock() {
 
     return(
         <div className="main-container">
-            <a className="back-btn" href="/portfolio" onClick={() => navigate("/portfolio")}>
+            <a className="back-btn" onClick={() => navigate(-1)}>
                 <FontAwesomeIcon icon={faArrowLeft} size="sm" /> retour
             </a>
             <div className="famstock-container">
