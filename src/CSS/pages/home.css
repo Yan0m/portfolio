@@ -38,11 +38,12 @@
 
   .back-btn {
     text-decoration: none;
-    color: black;
     padding: 10px 20px;
     background-color: orange;
     color: white;
     border-radius: 5px;
+    position: absolute;
+    left: 10%;
   }
   
   .btn:hover {

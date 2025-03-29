@@ -36,7 +36,7 @@ function Projects() {
                         <div className="project-card-face front col">
                             <img src={project.img} alt={`${project.titleLogo} Logo` } className="logo"></img>
                             <p>{project.title}</p>
-                            <a id="show-more" href={`/projects/${project.page}`} className="btn" onClick={() => navigate(`../projects/${project.page}`)}>En voir plus de {project.title}</a>
+                            <a id="show-more" className="btn" onClick={() => navigate(`../projects/${project.page}`)}>En voir plus de {project.title}</a>
                         </div>
                         <div className="project-card-face back col">
                             <p>{project.description}</p>

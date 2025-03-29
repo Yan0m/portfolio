@@ -64,7 +64,7 @@ function Home() {
           </div>
         </div>
         <div className="center">
-          <a id="show-more" href="/projects" className="btn" onClick={() => navigate("../projects")}>En voir plus</a>
+          <a id="show-more" className="btn" onClick={() => navigate("../projects")}>En voir plus</a>
         </div>
       </section>
     </div>
