@@ -39,14 +39,14 @@ function Home() {
       { /* #endregion */ }
 
       { /* #region Compétences */ }
-      <section id="skills">
+      <section id="skills" class="center-col">
         <h1>Mes Compétences</h1>
+        <SkillsSection/>
       </section>
-      <SkillsSection/>
       { /* #endregion */}
 
       {/* #region Réferences */}
-      <section id="projects">
+      <section id="projects" class="center-col">
         <h1>Mes Projets</h1>
         <div className="references-section">
           <div className="card references-card" onClick={() => navigate("../projects/butify")}>

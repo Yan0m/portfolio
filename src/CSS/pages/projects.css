@@ -1,11 +1,3 @@
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +12,7 @@
     height: 300px;
     perspective: 1000px;
     margin-bottom: 20px;
-    cursor: pointer; /* Ajoute un curseur pointer pour indiquer qu'on peut cliquer */
+    cursor: pointer;
 }
 
 .project-card-face {
@@ -38,7 +30,7 @@
 }
 
 .front {
-    background: white;
+    background: #1a1a1a;
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -59,7 +51,6 @@
     transform: rotateY(180deg);
 }
 
-/* 🌟 Animation de rotation au CLIC */
 .project-card {
     position: relative;
     transform-style: preserve-3d;
@@ -78,7 +69,6 @@
     height: 100%;
 }
 
-/* 🎯 Responsive */
 @media (max-width: 768px) {
     .projects-container {
         flex-direction: column;
