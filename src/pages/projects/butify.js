@@ -1,9 +1,5 @@
 import "../../CSS/pages/projects/butify.css";
 
-import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 import flutterLogo from "../../assets/images/logos/FLUTTER.png";
 import butifyLogo from "../../assets/projects/Butify/final.png";
 
@@ -11,35 +7,30 @@ import butifyCdc from "../../assets/projects/Butify/Butify_Cahier_des_charges.pd
 import butifyRapport from "../../assets/projects/Butify/Rapport_Butify.pdf";
 
 function Butify() {
-    const navigate = useNavigate();
-
     return(
-        <div className="main-container">
-            <a className="back-btn" onClick={() => navigate(-1)}>
-                <FontAwesomeIcon icon={faArrowLeft} size="sm" /> retour
-            </a>
-            <h1 id="butify-title" className="butify-title">Butify</h1>
-            <div>
-                <div id="butify-row1" className="row">
-                    <div id="butify-context" className="card">
-                        <h2 className="butify-title">Contexte du projet</h2>
-                        <p>Dans le cadre de notre projet d'étude de 3ème année de BUT Informatique nous avons décidé de réaliser une application de musique. 
-                            <br/><br/> J'ai de mon coté laissé mon groupe faire le site web, et réaliser en solitaire l'application mobile afin de pouvoir améliorer mes compétences dans ce domaine.
-                        </p>
-                    </div>
-                    <div className="row">
-                        <div id="butify-programmation" className="card">
-                            <h2 className="butify-title">Technologies utilisés</h2>
-                            <img src={flutterLogo} alt="Flutter Logo" className="logo" draggable="false"></img>
-                            <p>J'ai utilisé Flutter pour réaliser une application hybride</p>
+        <div className="butify-container">
+            <div className="center-col">
+                <h1 id="butify-title" className="butify-title">Butify</h1>
+                    <div id="butify-row1" className="center-row">
+                        <div id="butify-context" className="card">
+                            <h2 className="butify-title">Contexte du projet</h2>
+                            <p>Dans le cadre de notre projet d'étude de 3ème année de BUT Informatique nous avons décidé de réaliser une application de musique. 
+                                <br/><br/> J'ai de mon coté laissé mon groupe faire le site web, et réaliser en solitaire l'application mobile afin de pouvoir améliorer mes compétences dans ce domaine.
+                            </p>
                         </div>
-                        <div id="butify-document" className="card col">
-                            <h2 className="butify-title">Documents</h2>
-                            <a className="btn butify-btn" href={butifyCdc}> Cahier des charges de l'app</a>
-                            <a className="btn butify-btn" href={butifyRapport}>Explication détaillé</a>
+                        <div className="row">
+                            <div id="butify-programmation" className="card">
+                                <h2 className="butify-title">Technologies utilisés</h2>
+                                <img src={flutterLogo} alt="Flutter Logo" className="logo" draggable="false"></img>
+                                <p>J'ai utilisé Flutter pour réaliser une application hybride</p>
+                            </div>
+                            <div id="butify-document" className="card col">
+                                <h2 className="butify-title">Documents</h2>
+                                <a className="btn butify-btn" href={butifyCdc}> Cahier des charges de l'app</a>
+                                <a className="btn butify-btn" href={butifyRapport}>Explication détaillé</a>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
 
             <div id="butify-conclusion" className="card">

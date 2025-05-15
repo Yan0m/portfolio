@@ -36,6 +36,16 @@ html, body {
     color: #3D4A78;
   }
 
+  .card {
+    flex: 0 0 auto;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: center;
+  }
+
   .btn {
     display: inline-block;
     margin-top: 20px;
@@ -64,13 +74,6 @@ html, body {
     
   }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0B0C10;
-  margin: 0;
-  padding: 0;
-}
-
 .col {
   display: flex;
   flex-direction: column;
@@ -85,6 +88,12 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.center-row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -93,4 +102,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bottom-page {
+  margin-bottom: 100px;
 }

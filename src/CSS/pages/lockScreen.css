@@ -1,0 +1,79 @@
+.lock-container {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 1s ease;
+}
+
+.lock-container.unlocked {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.lock-box {
+  text-align: center;
+}
+
+.prompt {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.password-box {
+  background-color: #222;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 22px;
+  display: inline-block;
+  letter-spacing: 2px;
+  border: 1px solid #444;
+  min-width: 200px;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+  color: #0f0;
+}
+
+.unlocked-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unlocked-text {
+  font-size: 24px;
+  color: #0f0;
+  margin-bottom: 20px;
+}
+
+.enter-btn {
+  background-color: #0f0;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enter-btn:hover {
+  background-color: #0c0;
+}
+
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,73 @@
+.Presentation-container {
+    background-color: #0b0c10;
+}
+
+
+  #Name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #E0E0E0;
+  }
+    
+  .presentation-section {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile span {
+    margin-top: 5px;
+  }
+
+  #profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .references-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .references-card {
+    margin: auto;
+    width: 45%;
+    cursor: pointer;
+  }
+
+  .references-logo {
+    min-width: 125px;
+    max-height: 200px;
+  }
+
+  #show-more {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+  }
+
+  @media (max-width: 768px) {
+    .presentation-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #profile img {
+      width: 120px;
+    }
+  }

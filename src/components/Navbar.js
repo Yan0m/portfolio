@@ -1,59 +1,26 @@
-import React, { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faFileCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faHome, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
+import "../CSS/components/Navbar.css";
 
-import "../CSS/components/Navbar.css"
+export default function BottomNav() {
+  const location = useLocation();
 
-function Navbar() {
-
-    const [isFixed, setIsFixed] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 15 && !isMobile) { 
-                setIsFixed(true);
-            } else {
-                setIsFixed(false);
-            }
-        };
-
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("resize", handleResize);
-        };
-    }, [isMobile]);
-
-    return(
-        <nav className={`navbar ${isMobile ? "bottom-navbar" : isFixed ? "fixed" : ""}`}>
-            <NavItem to="/portfolio" icon={faHouse} label="Accueil" isRoute />
-            <NavItem to="projects" icon={faFileCode} label="Projets" />
-            <NavItem to="/contact" icon={faEnvelope} label="Contact" isRoute/>
-        </nav>
-    );
-}
-
-const NavItem = ({ to, icon, label, isRoute }) => {
-    return isRoute ? (
-      <Link to={to} className="nav-item">
-        <span className="nav-icon"><FontAwesomeIcon icon={icon} size="lg" /></span>
-        <span className="nav-text">{label}</span>
+  return (
+    <nav className="bottom-nav">
+      <Link to="/contact">
+        <FontAwesomeIcon icon={faPhone} size="lg" />
       </Link>
-    ) : (
-      <ScrollLink to={to} smooth={true} duration={500} className="nav-item">
-        <span className="nav-icon"><FontAwesomeIcon icon={icon} size="lg" /></span>
-        <span className="nav-text">{label}</span>
-      </ScrollLink>
-    );
-  };
-
-export default Navbar;
+      <Link to="/home" className={location.pathname === "/home" ? "active" : ""}>
+        <FontAwesomeIcon icon={faHome} size="lg" />
+      </Link>
+      <Link to="mailto:theoyou.pro@gmail.com">
+        <FontAwesomeIcon icon={faEnvelope} size="lg" />
+      </Link>
+      <Link to="/presentation" className={location.pathname === "/presentation" ? "active" : ""}>
+        <FontAwesomeIcon icon={faUser} size="lg" />
+      </Link>
+    </nav>
+  );
+}

@@ -1,0 +1,36 @@
+.loader-page {
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.loader-bar {
+  width: 120px;
+  height: 6px;
+  background: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.loader-fill {
+  width: 0%;
+  height: 100%;
+  background: #4a90e2;
+  animation: fillBar 2s linear forwards;
+  border-radius: 4px;
+}
+
+@keyframes fillBar {
+  to {
+    width: 100%;
+  }
+}

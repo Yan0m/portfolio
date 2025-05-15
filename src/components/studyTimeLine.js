@@ -19,7 +19,7 @@ const studies = [
               <div key={index} className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}>
                 <div className="timeline-content">
                   <h2>{study.year}</h2>
-                  <div className="row">
+                  <div className="center-row">
                     <p>{study.title}</p>
                     {study.icon && (
                     <FontAwesomeIcon icon={study.icon} style={{ color: study.color, fontSize: "20px", marginLeft: "10px"}}/>

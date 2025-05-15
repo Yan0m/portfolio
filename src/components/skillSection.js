@@ -26,7 +26,7 @@ export default function SkillsSection() {
     };
 
     return(
-        <div className="skills-container">
+        <div className="skills-container bottom-page">
             <div className="scroll-controls">
                 <button className="scroll-btn left" onClick={scrollLeft}>❮</button>
                 <button className="scroll-btn right" onClick={scrollRight}>❯</button>
