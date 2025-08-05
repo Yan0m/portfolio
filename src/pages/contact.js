@@ -23,26 +23,26 @@ function Contact() {
                     <div id="form-container">
                         <form onSubmit={handleSubmit}>
                             <div id="form-display">
-                                <div class="contact-row">
-                                    <div class="input-group">
+                                <div className="contact-row">
+                                    <div className="input-group">
                                         <label htmlFor="lastName">Nom :</label>
                                         <input type="text" id="lastName"/>
                                     </div>
-                                    <div class="input-group">
+                                    <div className="input-group">
                                         <label for="firstName">Prénom :</label>
                                         <input type="text" id="firstName"/>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="input-group">
+                                <div className="col">
+                                    <div className="input-group">
                                         <label for="email">Email :</label>
                                         <input type="email" id="email"/>
                                     </div>
-                                    <div class="input-group">
+                                    <div className="input-group">
                                         <label for="project">Projet :</label>
                                         <input type="text" id="project"/>
                                     </div>
-                                    <div class="input-group">
+                                    <div className="input-group">
                                         <label for="description">Description :</label>
                                         <textarea id="description"></textarea>
                                     </div>

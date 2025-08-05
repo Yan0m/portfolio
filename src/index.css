@@ -20,12 +20,11 @@ html, body {
   }
 
   h2 {
-    color: #E0E0E0;
+
   }
   
   p {
-    font-size: 1.2rem;
-    color: #E0E0E0;
+    font-size: 1rem;
   }
 
   a {
@@ -74,6 +73,10 @@ html, body {
     
   }
 
+  .shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
+  }
+
 .col {
   display: flex;
   flex-direction: column;
@@ -98,6 +101,10 @@ html, body {
   flex-wrap: wrap;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -106,4 +113,40 @@ html, body {
 
 .bottom-page {
   margin-bottom: 100px;
+}
+
+.white {
+  color: #E0E0E0;
+}
+
+.bg-black {
+  background-color: #0b0c10;
+}
+
+.bg-yellow {
+  background-color: #FFD700;
+}
+
+.bg-orange {
+  background-color: #FF8C00;
+}
+
+.bg-linear-yellow-orange {
+  background: linear-gradient(to bottom, #FFD700, #FF8C00);
+}
+
+.bg-linear-top-bot-black-white {
+  background: linear-gradient(to bottom, #A6A6A6, #E0E0E0);
+}
+
+.bg-linear-bot-top-black-white {
+  background: linear-gradient(to top, #A6A6A6, #E0E0E0);
+}
+
+.bg-linear-left-right-black-white {
+  background: linear-gradient(to right, #A6A6A6, #E0E0E0);
+}
+
+.bg-linear-right-left-black-white {
+  background: linear-gradient(to left, #A6A6A6, #E0E0E0);
 }

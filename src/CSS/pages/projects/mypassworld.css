@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0b0c10;
+    background-color: #fdfdfd;
     min-height: 100vh;
+}
+
+.MyPassWorld-maquette {
+    padding: 5px;
+    border-radius: 25px;
 }

@@ -6,13 +6,13 @@ import "../CSS/components/Navbar.css";
 
 export default function BottomNav() {
   const location = useLocation();
-
+  
   return (
     <nav className="bottom-nav">
       <Link to="/contact">
         <FontAwesomeIcon icon={faPhone} size="lg" />
       </Link>
-      <Link to="/home" className={location.pathname === "/home" ? "active" : ""}>
+      <Link to="/portfolio" className={location.pathname === "/home" ? "active" : ""}>
         <FontAwesomeIcon icon={faHome} size="lg" />
       </Link>
       <Link to="mailto:theoyou.pro@gmail.com">

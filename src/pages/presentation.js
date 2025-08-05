@@ -12,7 +12,7 @@ export default function Presentation() {
         <div className="Presentation-container">
             { /* #region Presentation */}
             <section id="portfolio">
-                <div class="center-col">
+                <div className="center-col">
                     <div className="card presentation-section">
                         <div id="profile">
                             <img src={profilePic} alt="Profile" draggable="false"></img>
@@ -36,7 +36,7 @@ export default function Presentation() {
             { /* #endregion */ }
 
             { /* #region Compétences */ }
-            <section id="skills" class="center-col">
+            <section id="skills" className="center-col">
                 <h1>Mes Compétences</h1>
                 <SkillsSection/>
             </section>

@@ -13,7 +13,7 @@ export default function ProjectLoader() {
 
     const timer = setTimeout(() => {
       navigate(target);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [navigate, target]);

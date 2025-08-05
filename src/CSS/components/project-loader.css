@@ -1,10 +1,14 @@
 .loader-page {
+  position: absolute;
+  width: 100%;
   height: 100vh;
+  z-index: 999;
   background: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  top: 0;
 }
 
 .loader-logo {
@@ -25,7 +29,7 @@
   width: 0%;
   height: 100%;
   background: #4a90e2;
-  animation: fillBar 2s linear forwards;
+  animation: fillBar 1s linear forwards;
   border-radius: 4px;
 }
 
